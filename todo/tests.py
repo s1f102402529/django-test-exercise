@@ -49,5 +49,5 @@ class TaskModelTestCase(TestCase):
         task = Task(title='task3',due_at=None)
         task.save()
 
-        self.assertTrue(task.is_overdue(current))
+        self.assertFalse(task.is_overdue(current))
     
